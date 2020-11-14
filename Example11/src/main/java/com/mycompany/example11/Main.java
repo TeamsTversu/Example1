@@ -5,6 +5,8 @@
  */
 package com.mycompany.example11;
 import com.mycompany.example11.List;
+import com.mycompany.example11.Stack;
+import com.mycompany.example11.Queue;
 /**
  *
  * @author Erishkegal
@@ -12,6 +14,11 @@ import com.mycompany.example11.List;
 public class Main {
      public static void main(String []args)
     {
-        System.out.print("Hello");
+        List<String> list = new List<>();
+           list.addToBegin("one");
+           list.addToBegin("two");
+           list.addToEnd("-one");
+           list.addToEnd("-two");
+           System.out.println(list);
     }
 }
